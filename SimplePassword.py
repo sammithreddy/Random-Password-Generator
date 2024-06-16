@@ -4,7 +4,7 @@ import tkinter as tk
 frame=tk.Tk()
 frame.geometry("300x400")
 frame.title("Password Generator")
-l=tk.Label(text="Enter the len of the password (Min =8 , Max=25)")
+l=tk.Label(text="Enter the len of the password (Min =6 , Max=25)")
 textbox1=tk.Text(frame,height=1,width=15,bg="light yellow")
 pa=tk.Text(frame,height=3,width=20,bg="light cyan")
 b=tk.Button(frame,height=2,text="Submit",command=lambda: generate_password(int(textbox1.get("1.0","end"))))
